@@ -12,7 +12,8 @@ function changeMode(){
         body.classList.remove("dark");
         byuiImage.setAttribute("src", "byui-logo.webp");
     }
-    else if (mode === "dark")
+    else if (mode === "dark"){
         body.classList.add("dark");
         byuiImage.setAttribute("src", "byui-logo-white.png");
+    }
 }
