@@ -41,3 +41,18 @@ img {
     margin: auto;
     margin-top: 50px;
 }
+
+
+/* For Dark Mode */
+
+.dark {
+    background-color: #242424;
+}
+
+.dark #content {
+    color: #FFF;
+}
+
+.dark h2{
+    color: #2978a0;
+}
