@@ -69,6 +69,7 @@ dialog{
     margin: auto;
     width: 80%;
     height: 80%;
+    max-width: 800px;
     display: grid;
     background: none;
     border: none;
