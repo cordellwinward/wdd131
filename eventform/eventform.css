@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #B7C9E2;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.form-box{
+    width: 95%;
+    max-width: 700px;
+    margin:70px auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+label{
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+#firstName, #lastName{
+    grid-row: 2/3;
+}
+
+#email-label, #email, #studentId, #studentId-label, #accessCode, #accessCode-label{
+    grid-column: 1/3;
+}
+
+.possibly-needed{
+    display: none;
+}
+.required{
+    display: block;
+}
+
+#type, #eventDate{
+    grid-row: 6/7;
+}
+
+#submitButton{
+    grid-column: 1/3;
+}
+
+label{
+    font-size: 12px;
+    margin-left: 5px;
+}
+input, select, button{
+    margin: 5px 5px 15px 5px;
+    height: 30px;
+    max-width: 95%;
+}
+
+@media screen and (min-width: 500px){
+    .form-box{
+        padding: 50px;
+    }   
+}
