@@ -57,6 +57,7 @@ form.addEventListener("submit", (event) => {
         <p>${type}</p>
         <p>${eventDate.getFullYear()}-${eventDate.getMonth() + 1}-${eventDate.getDate()}</p>
         `
+        form.reset()
     }
 });
 
