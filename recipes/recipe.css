@@ -107,6 +107,11 @@ img{
     width: 100%;
 }
 
+.tags{
+    display: flex;
+    gap: 5px;
+}
+
 .recipe-card button{
     width: fit-content;
     padding: 5px;
