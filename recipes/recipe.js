@@ -321,23 +321,17 @@ const displayedRecipes = document.querySelector("main")
 const searchbar = document.querySelector(".search form")
 
 displayedRecipes.innerHTML = FormatRecipeCard(initialRandomRecipe)
-console.log("test")
 searchbar.addEventListener("submit", event =>{
-    console.log("test2")
     event.preventDefault();
     const searchText = searchbar.searchBar.value;
-    console.log(searchText);
     const filteredRecipes = filterRecipes(searchText);
-    // console.log(filteredRecipes)
     const sortedRecipes = filteredRecipes.sort(SortRecipes);
-    console.log(sortedRecipes)
     DisplayRecipes(sortedRecipes);
 
 
 });
 
 function filterRecipes(searchText){
-    console.log("filterRecipes");
     return recipes.filter(recipe => {
         return recipe.tags.map(tag => tag.toLowerCase()).includes(searchText.toLowerCase()) 
         || recipe.name.toLowerCase().includes(searchText.toLowerCase())
